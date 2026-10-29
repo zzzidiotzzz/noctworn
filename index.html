@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>𝔑𝔬𝔠𝔱𝔴𝔬𝔯𝔫</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+.hero {
+    width: 100%;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    text-align: center;
+    width: 100%;
+}
+
+.hero .subtitle {
+    text-align: center;
+    width: 100%;
+}
+
+    margin: 0;
+    padding: 0;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.55),
+                        rgba(0, 0, 0, 0.75)),
+        url("images/Noctworn.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-color: #080808;
+    color: #aaa;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+    margin: 0;
+    padding: 0;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.55),
+                        rgba(0, 0, 0, 0.75)),
+        url("images/Noctworn.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-color: #080808;
+    color: #aaa;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+    color: #e3e3e3;
+    font-size: clamp(35px, 8vw, 85px);
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin: 0;
+    text-shadow: 2px 2px 8px black;
+}
+
+.subtitle {
+    color: #aaa;
+    letter-spacing: 4px;
+    font-size: 12px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+/* ССЫЛКИ */
+
+nav {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+a {
+    color: #aaa;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+a:hover {
+    color: white;
+}
+
+/* ИНФОРМАЦИЯ */
+
+section {
+    max-width: 700px;
+    margin: auto;
+    padding: 65px 25px;
+    text-align: center;
+}
+
+h2 {
+    color: #ddd;
+    font-size: 22px;
+    font-weight: normal;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #292929;
+    max-width: 500px;
+    margin: auto;
+}
+
+footer {
+    padding: 30px 15px;
+    text-align: center;
+    color: #555;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+</style>
+</head>
+
+<body>
+
+
+<header class="hero">
+    <h1>𝔑𝔬𝔠𝔱𝔴𝔬𝔯𝔫</h1>
+
+    <div class="subtitle">
+        Black Metal / DSBM
+    </div>
+
+    <nav>
+        <a href="#about">О нас</a>
+        <a href="#music">Дискография</a>
+		<a href="bio.html">Биография</a>
+		<a href="video%20archive.html">Видеоархив репетиций</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>О нас</h2>
+
+    </p>
+        В разработке.
+    
+</section>
+
+<hr>
+
+
+<section id="music">
+    <h2>Дискография</h2>
+
+    <div class="track-list">
+        <button class="track" data-src="audio/Snow falls (demo).mp3">
+            <span>01.</span> Snow falls (demo)
+        </button>
+
+        <button class="track" data-src="audio/Period of Passion (demo).mp3">
+            <span>02.</span> Period of Passion (demo)
+        </button>
+
+<button class="track" data-src="audio/Period of Passion.mp3">
+            <span>03.</span> Period of Passion
+        </button>
+
+        <button class="track" data-src="audio/shadow.mp3">
+            <span>04.</span> Shadow in the broken glass
+        </button>
+
+        <button class="track" data-src="audio/rot-in-the-family-tree.mp3">
+            <span>05.</span> Rot in the family tree
+        </button>
+
+        <button class="track" data-src="audio/i-asked-you-to-leave.mp3">
+            <span>06.</span> I asked you to leave
+        </button>
+    </div>
+
+    <audio id="player" controls preload="none"></audio>
+
+    <p class="manifesto">
+        Помяните наше слово. Однажды, в недалёком будущем,
+        вы о нас услышите! И о группе Noctworn услышит весь мир!
+		Пока что мы находимся в глубоком андере,
+        и послушать нас можно только в Telegram.
+    </p>
+
+    </p>
+
+    <a href="https://t.me/noctworn" target="_blank"
+       rel="noopener noreferrer">
+        [Творчество Noctworn. Жми!]
+    </a>
+</section>
+
+<style>
+.track-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.track {
+    background: transparent;
+    color: #aaa;
+    border: none;
+    border-bottom: 1px solid #292929;
+    padding: 15px 0;
+    text-align: left;
+    font: inherit;
+    cursor: pointer;
+}
+
+.track span {
+    color: #555;
+    margin-right: 12px;
+}
+
+.track:hover {
+    color: #fff;
+}
+
+.track.active {
+    color: #fff;
+}
+
+#player {
+    width: 100%;
+    margin: 15px 0 25px;
+    filter: grayscale(1);
+}
+
+.manifesto {
+    color: #aaa;
+    font-style: italic;
+    line-height: 1.7;
+}
+</style>
+
+<script>
+const player = document.getElementById("player");
+const tracks = document.querySelectorAll(".track");
+
+tracks.forEach(function(track) {
+    track.addEventListener("click", function() {
+        const file = track.dataset.src;
+
+        if (player.getAttribute("src") === file) {
+            if (player.paused) {
+                player.play();
+            } else {
+                player.pause();
+            }
+            return;
+        }
+
+        player.src = file;
+
+        tracks.forEach(function(item) {
+            item.classList.remove("active");
+        });
+
+        track.classList.add("active");
+        player.play();
+    });
+});
+</script>
+
+<hr>
+
+<section id="contact">
+    <h2>Контакты</h2>
+
+    
+<p>
+    <a href="https://www.instagram.com/official_noctworn/"
+       target="_blank" rel="noopener noreferrer">Instagram</a>
+
+    &nbsp; / &nbsp;
+
+    <a href="https://t.me/Official_Noctworn"
+       target="_blank" rel="noopener noreferrer">Telegram</a>
+
+    &nbsp; / &nbsp;
+
+    <a href="https://www.tiktok.com/@official_noctworn?_r=1&_t=ZS-9AWCXVWYwW9"
+       target="_blank" rel="noopener noreferrer">TikTok</a>
+	   
+	   &nbsp; / &nbsp;
+
+    <a href="https://youtube.com/@official_noctworn?si=2f44dc2KVNNLm9ZQ"
+       target="_blank" rel="noopener noreferrer">YouTube</a>
+</p>
+
+</section>
+
+<footer>
+    𝔑𝔬𝔠𝔱𝔴𝔬𝔯𝔫 · 2026
+</footer>
+
+</body>
+</html>
